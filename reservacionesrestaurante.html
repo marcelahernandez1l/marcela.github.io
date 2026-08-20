@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserva una mesa en El Triángulo del Sabor.">
+    <title>El Triángulo del Sabor | Reservaciones</title>
+    <link rel="stylesheet" href="estiloscssrestaurante.css">
+</head>
+
+<body>
+
+<header class="encabezado">
+    <div class="contenedor encabezado-contenido">
+
+        <a href="indexrestaurante.html" class="logo">
+            El Triángulo <span>del Sabor</span>
+        </a>
+
+        <nav class="navegacion" aria-label="Navegación principal">
+            <a href="indexrestaurante.html">Inicio</a>
+            <a href="menurestaurante.html">Menú</a>
+            <a href="reservacionesrestaurante.html" class="active">Reservaciones</a>
+            <a href="contactosrestaurante.html">Contacto</a>
+            <a href="loginrestaurante.html">Iniciar sesión</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<section class="encabezado-pagina">
+
+    <div class="contenedor">
+
+        <p class="etiqueta">EL TRIÁNGULO DEL SABOR</p>
+
+        <h1>Reservaciones</h1>
+
+        <p>
+            Reserva tu mesa y disfruta una experiencia especial.
+        </p>
+
+    </div>
+
+</section>
+
+<div class="contenedor">
+
+<section class="formulario-contenedor">
+
+    <div class="formulario-intro">
+
+        <p class="etiqueta">RESERVA TU MESA</p>
+
+        <h2>Completa el formulario</h2>
+
+        <p>
+            Todos los campos marcados son necesarios para procesar tu reserva.
+        </p>
+
+    </div>
+
+    <form action="#" method="post">
+
+        <fieldset>
+
+            <legend>Información de la reservación</legend>
+
+            <div class="grid-formulario">
+
+                <div class="campo">
+
+                    <label for="nombre">Nombre completo</label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre"
+                        required>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="telefono">Teléfono</label>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="+503 7000-0000"
+                        pattern="[0-9+\-\s]{8,15}"
+                        required>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="correo">Correo electrónico</label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="correo@ejemplo.com"
+                        required>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="personas">Número de personas</label>
+
+                    <input
+                        type="number"
+                        id="personas"
+                        name="personas"
+                        min="1"
+                        max="20"
+                        placeholder="Cantidad"
+                        required>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="fecha">Fecha</label>
+
+                    <input
+                        type="date"
+                        id="fecha"
+                        name="fecha"
+                        required>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="hora">Hora</label>
+
+                    <input
+                        type="time"
+                        id="hora"
+                        name="hora"
+                        min="11:00"
+                        max="21:30"
+                        required>
+
+                </div>
+
+                <div class="campo campo-completo">
+
+                    <label for="zona">Zona del restaurante</label>
+
+                    <select id="zona" name="zona" required>
+
+                        <option value="">Selecciona una zona</option>
+                        <option value="salon-principal">Salón principal</option>
+                        <option value="terraza">Terraza</option>
+                        <option value="zona-familiar">Zona familiar</option>
+                        <option value="zona-privada">Zona privada</option>
+
+                    </select>
+
+                </div>
+
+                <div class="campo campo-completo">
+
+                    <label for="comentarios">Comentarios adicionales</label>
+
+                    <textarea
+                        id="comentarios"
+                        name="comentarios"
+                        placeholder="Escribe alguna solicitud especial"></textarea>
+
+                </div>
+
+            </div>
+
+            <button
+                type="submit"
+                class="boton boton-principal boton-formulario">
+                Confirmar reservación
+            </button>
+
+        </fieldset>
+
+    </form>
+
+</section>
+
+<section class="informacion-reserva">
+
+    <article>
+
+        <h2>Horario</h2>
+
+        <p>
+            Lunes a jueves: 11:00 a.m. - 9:00 p.m.
+        </p>
+
+        <p>
+            Viernes a domingo: 11:00 a.m. - 10:00 p.m.
+        </p>
+
+    </article>
+
+    <article>
+
+        <h2>Información</h2>
+
+        <p>
+            Las reservaciones están sujetas a disponibilidad. Recomendamos
+            reservar con anticipación para grupos grandes.
+        </p>
+
+    </article>
+
+</section>
+
+</div>
+
+</main>
+
+<footer class="pie-pagina">
+
+    <div class="contenedor footer-contenido">
+
+        <div>
+            <h2>El Triángulo del Sabor</h2>
+            <p>Donde cada lado tiene un sabor diferente.</p>
+        </div>
+
+        <div>
+            <p>Olocuilta, La Paz, El Salvador</p>
+            <p>+503 7000-0000</p>
+            <p>contacto@eltriangulodelsabor.com</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>
+            &copy; 2026 El Triángulo del Sabor. Todos los derechos reservados.
+        </p>
+    </div>
+
+</footer>
+
+</body>
+</html>

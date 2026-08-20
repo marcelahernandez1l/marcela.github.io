@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iniciar sesión en El Triángulo del Sabor.">
+    <title>El Triángulo del Sabor | Iniciar Sesión</title>
+    <link rel="stylesheet" href="estiloscssrestaurante.css">
+</head>
+
+<body>
+
+<header class="encabezado">
+    <div class="contenedor encabezado-contenido">
+
+        <a href="indexrestaurante.html" class="logo">
+            El Triángulo <span>del Sabor</span>
+        </a>
+
+        <nav class="navegacion" aria-label="Navegación principal">
+            <a href="indexrestaurante.html">Inicio</a>
+            <a href="menurestaurante.html">Menú</a>
+            <a href="reservacionesrestaurante.html">Reservaciones</a>
+            <a href="contactosrestaurante.html">Contacto</a>
+            <a href="loginrestaurante.html" class="active">Iniciar sesión</a>
+        </nav>
+
+    </div>
+</header>
+
+<main class="pagina-login">
+
+    <section class="login-hero">
+
+        <div class="tarjeta-login animar-entrada">
+
+            <header class="login-cabecera">
+
+                <p class="etiqueta">EL TRIÁNGULO DEL SABOR</p>
+
+                <h1>Iniciar sesión</h1>
+
+                <p>
+                    Accede a tu cuenta para continuar.
+                </p>
+
+            </header>
+
+            <form action="#" method="post">
+
+                <div class="campo">
+
+                    <label for="correo">Correo electrónico</label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="correo@ejemplo.com"
+                        autocomplete="email"
+                        required>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="password">Contraseña</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Ingresa tu contraseña"
+                        minlength="6"
+                        autocomplete="current-password"
+                        required>
+
+                </div>
+
+                <div class="opciones-login">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="recordar">
+                        Recordarme
+                    </label>
+
+                    <a href="#">
+                        ¿Olvidaste tu contraseña?
+                    </a>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="boton boton-principal boton-formulario">
+                    Iniciar sesión
+                </button>
+
+            </form>
+
+            <p class="registro">
+                ¿No tienes una cuenta?
+                <a href="#">Crear una cuenta</a>
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="pie-pagina">
+
+    <div class="contenedor footer-contenido">
+
+        <div>
+            <h2>El Triángulo del Sabor</h2>
+            <p>Donde cada lado tiene un sabor diferente.</p>
+        </div>
+
+        <div>
+            <p>Olocuilta, La Paz, El Salvador</p>
+            <p>+503 7000-0000</p>
+            <p>contacto@eltriangulodelsabor.com</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>
+            &copy; 2026 El Triángulo del Sabor. Todos los derechos reservados.
+        </p>
+    </div>
+
+</footer>
+
+</body>
+</html>
