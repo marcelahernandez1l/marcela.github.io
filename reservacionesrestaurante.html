@@ -22,25 +22,17 @@
 
         <nav class="navegacion" aria-label="Navegación principal">
 
-            <a href="index.html">
-                Inicio
-            </a>
+            <a href="index.html">Inicio</a>
 
-            <a href="menurestaurante.html">
-                Menú
-            </a>
+            <a href="menurestaurante.html">Menú</a>
 
             <a href="reservacionesrestaurante.html" class="active">
                 Reservaciones
             </a>
 
-            <a href="contactosrestaurante.html">
-                Contacto
-            </a>
+            <a href="contactosrestaurante.html">Contacto</a>
 
-            <a href="loginrestaurante.html">
-                Iniciar sesión
-            </a>
+            <a href="loginrestaurante.html">Iniciar sesión</a>
 
         </nav>
 
@@ -51,325 +43,303 @@
 
 <main>
 
+    <section class="encabezado-pagina">
 
-<section class="encabezado-pagina">
+        <div class="contenedor">
 
-    <div class="contenedor">
+            <p class="etiqueta">
+                EL TRIÁNGULO DEL SABOR
+            </p>
 
-        <p class="etiqueta">
-            EL TRIÁNGULO DEL SABOR
-        </p>
+            <h1>
+                Reservaciones
+            </h1>
 
-        <h1>
-            Reservaciones
-        </h1>
-
-        <p>
-            Reserva tu mesa y disfruta una experiencia especial.
-        </p>
-
-    </div>
-
-</section>
-
-
-<div class="contenedor">
-
-
-<section class="formulario-contenedor">
-
-    <div class="formulario-intro">
-
-        <p class="etiqueta">
-            RESERVA TU MESA
-        </p>
-
-        <h2>
-            Completa el formulario
-        </h2>
-
-        <p>
-            Todos los campos marcados son necesarios para procesar tu reserva.
-        </p>
-
-    </div>
-
-
-    <fieldset>
-
-        <legend>
-            Información de la reservación
-        </legend>
-
-
-        <div class="grid-formulario">
-
-
-            <div class="campo">
-
-                <label for="nombre">
-                    Nombre completo
-                </label>
-
-                <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    placeholder="Escribe tu nombre"
-                    required>
-
-            </div>
-
-
-            <div class="campo">
-
-                <label for="telefono">
-                    Teléfono
-                </label>
-
-                <input
-                    type="tel"
-                    id="telefono"
-                    name="telefono"
-                    placeholder="+503 7000-0000"
-                    pattern="[0-9+\-\s]{8,15}"
-                    required>
-
-            </div>
-
-
-            <div class="campo">
-
-                <label for="correo">
-                    Correo electrónico
-                </label>
-
-                <input
-                    type="email"
-                    id="correo"
-                    name="correo"
-                    placeholder="correo@ejemplo.com"
-                    required>
-
-            </div>
-
-
-            <div class="campo">
-
-                <label for="personas">
-                    Número de personas
-                </label>
-
-                <input
-                    type="number"
-                    id="personas"
-                    name="personas"
-                    min="1"
-                    max="20"
-                    placeholder="Cantidad"
-                    required>
-
-            </div>
-
-
-            <div class="campo">
-
-                <label for="fecha">
-                    Fecha
-                </label>
-
-                <input
-                    type="date"
-                    id="fecha"
-                    name="fecha"
-                    required>
-
-            </div>
-
-
-            <div class="campo">
-
-                <label for="hora">
-                    Hora
-                </label>
-
-                <input
-                    type="time"
-                    id="hora"
-                    name="hora"
-                    min="11:00"
-                    max="21:30"
-                    required>
-
-            </div>
-
-
-            <div class="campo campo-completo">
-
-                <label for="zona">
-                    Zona del restaurante
-                </label>
-
-                <select
-                    id="zona"
-                    name="zona"
-                    required>
-
-                    <option value="">
-                        Selecciona una zona
-                    </option>
-
-                    <option value="salon-principal">
-                        Salón principal
-                    </option>
-
-                    <option value="terraza">
-                        Terraza
-                    </option>
-
-                    <option value="zona-familiar">
-                        Zona familiar
-                    </option>
-
-                    <option value="zona-privada">
-                        Zona privada
-                    </option>
-
-                </select>
-
-            </div>
-
-
-            <div class="campo campo-completo">
-
-                <label for="comentarios">
-                    Comentarios adicionales
-                </label>
-
-                <textarea
-                    id="comentarios"
-                    name="comentarios"
-                    placeholder="Escribe alguna solicitud especial"></textarea>
-
-            </div>
-
+            <p>
+                Reserva tu mesa y disfruta una experiencia especial.
+            </p>
 
         </div>
 
-
-        <a
-            href="#confirmacion"
-            class="boton boton-principal boton-formulario">
-
-            Confirmar reservación
-
-        </a>
+    </section>
 
 
-    </fieldset>
+    <div class="contenedor">
+
+        <section class="formulario-contenedor">
+
+            <div class="formulario-intro">
+
+                <p class="etiqueta">
+                    RESERVA TU MESA
+                </p>
+
+                <h2>
+                    Completa el formulario
+                </h2>
+
+                <p>
+                    Todos los campos marcados son necesarios para procesar tu reserva.
+                </p>
+
+            </div>
 
 
-</section>
+            <form action="#confirmacion" method="get">
 
+                <fieldset>
+
+                    <legend>
+                        Información de la reservación
+                    </legend>
+
+
+                    <div class="grid-formulario">
+
+
+                        <div class="campo">
+
+                            <label for="nombre">
+                                Nombre completo
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                placeholder="Escribe tu nombre"
+                                required>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="telefono">
+                                Teléfono
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="telefono"
+                                name="telefono"
+                                placeholder="+503 7000-0000"
+                                pattern="[0-9+\-\s]{8,15}"
+                                required>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="correo">
+                                Correo electrónico
+                            </label>
+
+                            <input
+                                type="email"
+                                id="correo"
+                                name="correo"
+                                placeholder="correo@ejemplo.com"
+                                required>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="personas">
+                                Número de personas
+                            </label>
+
+                            <input
+                                type="number"
+                                id="personas"
+                                name="personas"
+                                min="1"
+                                max="20"
+                                placeholder="Cantidad"
+                                required>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="fecha">
+                                Fecha
+                            </label>
+
+                            <input
+                                type="date"
+                                id="fecha"
+                                name="fecha"
+                                required>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="hora">
+                                Hora
+                            </label>
+
+                            <input
+                                type="time"
+                                id="hora"
+                                name="hora"
+                                min="11:00"
+                                max="21:30"
+                                required>
+
+                        </div>
+
+
+                        <div class="campo campo-completo">
+
+                            <label for="zona">
+                                Zona del restaurante
+                            </label>
+
+                            <select
+                                id="zona"
+                                name="zona"
+                                required>
+
+                                <option value="">
+                                    Selecciona una zona
+                                </option>
+
+                                <option value="salon-principal">
+                                    Salón principal
+                                </option>
+
+                                <option value="terraza">
+                                    Terraza
+                                </option>
+
+                                <option value="zona-familiar">
+                                    Zona familiar
+                                </option>
+
+                                <option value="zona-privada">
+                                    Zona privada
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="campo campo-completo">
+
+                            <label for="comentarios">
+                                Comentarios adicionales
+                            </label>
+
+                            <textarea
+                                id="comentarios"
+                                name="comentarios"
+                                placeholder="Escribe alguna solicitud especial"></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="boton boton-principal boton-formulario">
+
+                        Confirmar reservación
+
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+
+        <section class="informacion-reserva">
+
+            <article>
+
+                <h2>
+                    Horario
+                </h2>
+
+                <p>
+                    Lunes a jueves: 11:00 a.m. - 9:00 p.m.
+                </p>
+
+                <p>
+                    Viernes a domingo: 11:00 a.m. - 10:00 p.m.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <h2>
+                    Información
+                </h2>
+
+                <p>
+                    Las reservaciones están sujetas a disponibilidad.
+                    Recomendamos reservar con anticipación para grupos grandes.
+                </p>
+
+            </article>
+
+        </section>
+
+    </div>
+
+</main>
 
 
 <section
     id="confirmacion"
     class="ventana-confirmacion">
 
-
     <div class="tarjeta-confirmacion">
 
-
         <div class="check-confirmacion">
-
             ✓
-
         </div>
 
-
         <h2>
-
             ¡Reservación
             <br>
             confirmada!
-
         </h2>
 
-
         <p>
-
             Tu reservación está confirmada.
             <br>
             ¡Te esperamos!
-
         </p>
 
-
         <a
-            href="index.html"
+            href="#"
             class="boton-volver">
 
-            Volver al inicio
+            Volver a la página
 
         </a>
 
-
     </div>
 
-
 </section>
-
-
-
-<section class="informacion-reserva">
-
-
-    <article>
-
-        <h2>
-            Horario
-        </h2>
-
-        <p>
-            Lunes a jueves: 11:00 a.m. - 9:00 p.m.
-        </p>
-
-        <p>
-            Viernes a domingo: 11:00 a.m. - 10:00 p.m.
-        </p>
-
-    </article>
-
-
-    <article>
-
-        <h2>
-            Información
-        </h2>
-
-        <p>
-            Las reservaciones están sujetas a disponibilidad.
-            Recomendamos reservar con anticipación para grupos grandes.
-        </p>
-
-    </article>
-
-
-</section>
-
-
-</div>
-
-</main>
-
 
 
 <footer class="pie-pagina">
 
-
     <div class="contenedor footer-contenido">
-
 
         <div>
 
@@ -400,7 +370,6 @@
 
         </div>
 
-
     </div>
 
 
@@ -413,9 +382,7 @@
 
     </div>
 
-
 </footer>
-
 
 </body>
 
