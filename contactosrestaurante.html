@@ -1,261 +1,109 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Información de contacto de El Triángulo del Sabor.">
-    <title>El Triángulo del Sabor | Contacto</title>
-    <link rel="stylesheet" href="estiloscssrestaurante.css">
-</head>
+<form action="index.html" method="get">
 
-<body>
+    <div class="grid-formulario">
 
-<header class="encabezado">
-    <div class="contenedor encabezado-contenido">
+        <div class="campo">
 
-        <a href="index.html" class="logo">
-            El Triángulo <span>del Sabor</span>
-        </a>
+            <label for="nombre">
+                Nombre completo
+            </label>
 
-        <nav class="navegacion" aria-label="Navegación principal">
-            <a href="index.html">Inicio</a>
-            <a href="menurestaurante.html">Menú</a>
-            <a href="reservacionesrestaurante.html">Reservaciones</a>
-            <a href="contactosrestaurante.html" class="active">Contacto</a>
-            <a href="loginrestaurante.html">Iniciar sesión</a>
-        </nav>
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Escribe tu nombre"
+                required>
 
-    </div>
-</header>
-
-<main>
-
-<section class="encabezado-pagina">
-
-    <div class="contenedor">
-
-        <p class="etiqueta">ESTAMOS PARA SERVIRTE</p>
-
-        <h1>Contacto</h1>
-
-        <p>
-            Comunícate con nosotros. Será un gusto atenderte.
-        </p>
-
-    </div>
-
-</section>
-
-<div class="contenedor contacto-layout">
-
-    <section class="informacion-contacto">
-
-        <p class="etiqueta">INFORMACIÓN</p>
-
-        <h2>Visítanos</h2>
-
-        <p>
-            Si deseas realizar una consulta, conocer más sobre nuestro menú
-            o solicitar información sobre reservaciones, puedes contactarnos.
-        </p>
-
-        <article class="dato-contacto">
-
-            <h3>Dirección</h3>
-
-            <p>
-                Olocuilta, La Paz, El Salvador
-            </p>
-
-        </article>
-
-        <article class="dato-contacto">
-
-            <h3>Teléfono</h3>
-
-            <p>
-                +503 7000-0000
-            </p>
-
-        </article>
-
-        <article class="dato-contacto">
-
-            <h3>Correo electrónico</h3>
-
-            <p>
-                contacto@eltriangulodelsabor.com
-            </p>
-
-        </article>
-
-        <article class="dato-contacto">
-
-            <h3>Horario de atención</h3>
-
-            <p>
-                Lunes a jueves: 11:00 a.m. - 9:00 p.m.
-            </p>
-
-            <p>
-                Viernes a domingo: 11:00 a.m. - 10:00 p.m.
-            </p>
-
-        </article>
-
-    </section>
-
-    <section class="formulario-contacto">
-
-        <header>
-
-            <p class="etiqueta">ESCRÍBENOS</p>
-
-            <h2>Envíanos un mensaje</h2>
-
-            <p>
-                Completa el formulario y nos pondremos en contacto contigo.
-            </p>
-
-        </header>
-
-       <form action="index.html" method="get">
-           
-            <div class="grid-formulario">
-
-                <div class="campo">
-
-                    <label for="nombre">Nombre completo</label>
-
-                    <input
-                        type="text"
-                        id="nombre"
-                        name="nombre"
-                        placeholder="Escribe tu nombre"
-                        required>
-
-                </div>
-
-                <div class="campo">
-
-                    <label for="correo">Correo electrónico</label>
-
-                    <input
-                        type="email"
-                        id="correo"
-                        name="correo"
-                        placeholder="correo@ejemplo.com"
-                        required>
-
-                </div>
-
-                <div class="campo">
-
-                    <label for="telefono">Teléfono</label>
-
-                    <input
-                        type="tel"
-                        id="telefono"
-                        name="telefono"
-                        placeholder="+503 7000-0000"
-                        required>
-
-                </div>
-
-                <div class="campo">
-
-                    <label for="asunto">Asunto</label>
-
-                    <select id="asunto" name="asunto" required>
-
-                        <option value="">Selecciona un asunto</option>
-                        <option value="reservacion">Reservación</option>
-                        <option value="menu">Consulta sobre menú</option>
-                        <option value="evento">Eventos</option>
-                        <option value="otro">Otro</option>
-
-                    </select>
-
-                </div>
-
-                <div class="campo campo-completo">
-
-                    <label for="mensaje">Mensaje</label>
-
-                    <textarea
-                        id="mensaje"
-                        name="mensaje"
-                        placeholder="Escribe tu mensaje"
-                        required></textarea>
-
-                </div>
-
-            </div>
-
-            <button
-                type="submit"
-                class="boton boton-principal boton-formulario">
-                Enviar mensaje
-            </button>
-
-        </form>
-
-    </section>
-
-</div>
-
-<div class="contenedor">
-
-<section class="mapa">
-
-    <div class="titulo-seccion">
-
-        <p class="etiqueta">UBICACIÓN</p>
-
-        <h2>Encuéntranos</h2>
-
-        <p>
-            Nuestra ubicación en Olocuilta, La Paz.
-        </p>
-
-    </div>
-
-    <iframe
-        src="https://www.google.com/maps?q=Olocuilta,+La+Paz,+El+Salvador&output=embed"
-        title="Mapa de ubicación de El Triángulo del Sabor"
-        loading="lazy">
-    </iframe>
-
-</section>
-
-</div>
-
-</main>
-
-<footer class="pie-pagina">
-
-    <div class="contenedor footer-contenido">
-
-        <div>
-            <h2>El Triángulo del Sabor</h2>
-            <p>Donde cada lado tiene un sabor diferente.</p>
         </div>
 
-        <div>
-            <p>Olocuilta, La Paz, El Salvador</p>
-            <p>+503 6745 8134</p>
-            <p>contacto@eltriangulodelsabor.com</p>
+        <div class="campo">
+
+            <label for="correo">
+                Correo electrónico
+            </label>
+
+            <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="correo@ejemplo.com"
+                required>
+
+        </div>
+
+        <div class="campo">
+
+            <label for="telefono">
+                Teléfono
+            </label>
+
+            <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="+503 7000-0000"
+                required>
+
+        </div>
+
+        <div class="campo">
+
+            <label for="asunto">
+                Asunto
+            </label>
+
+            <select
+                id="asunto"
+                name="asunto"
+                required>
+
+                <option value="">
+                    Selecciona un asunto
+                </option>
+
+                <option value="reservacion">
+                    Reservación
+                </option>
+
+                <option value="menu">
+                    Consulta sobre menú
+                </option>
+
+                <option value="evento">
+                    Eventos
+                </option>
+
+                <option value="otro">
+                    Otro
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="campo campo-completo">
+
+            <label for="mensaje">
+                Mensaje
+            </label>
+
+            <textarea
+                id="mensaje"
+                name="mensaje"
+                placeholder="Escribe tu mensaje"
+                required></textarea>
+
         </div>
 
     </div>
 
-    <div class="copyright">
-        <p>
-            &copy; 2026 El Triángulo del Sabor. Todos los derechos reservados.
-        </p>
-    </div>
+    <button
+        type="submit"
+        class="boton boton-principal boton-formulario">
 
-</footer>
+        Enviar mensaje
 
-</body>
-</html>
+    </button>
+
+</form>
