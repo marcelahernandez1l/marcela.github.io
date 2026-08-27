@@ -1011,4 +1011,92 @@ legend {
         height: 90px;
         font-size: 50px;
     }
+    .pagina-confirmacion {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: var(--gris-fondo);
+}
+
+.pagina-confirmacion .tarjeta-confirmacion {
+    width: 500px;
+    max-width: 100%;
+    padding: 55px 40px;
+    background-color: var(--blanco);
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px var(--sombra-fuerte);
+}
+
+.pagina-confirmacion .check-confirmacion {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background-color: #d9902b;
+    color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.pagina-confirmacion .tarjeta-confirmacion h1 {
+    margin-bottom: 20px;
+    color: var(--cafe-oscuro);
+    font-family: Georgia, serif;
+    font-size: 42px;
+    line-height: 1.15;
+}
+
+.pagina-confirmacion .tarjeta-confirmacion p {
+    margin-bottom: 30px;
+    color: var(--gris-texto);
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.pagina-confirmacion .boton-volver {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: var(--cafe-oscuro);
+    color: var(--blanco);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: var(--transicion);
+}
+
+.pagina-confirmacion .boton-volver:hover {
+    background-color: var(--cafe-claro);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+
+    .pagina-confirmacion {
+        padding: 40px 15px;
+    }
+
+    .pagina-confirmacion .tarjeta-confirmacion {
+        padding: 40px 20px;
+    }
+
+    .pagina-confirmacion .tarjeta-confirmacion h1 {
+        font-size: 32px;
+    }
+
+    .pagina-confirmacion .tarjeta-confirmacion p {
+        font-size: 17px;
+    }
+
+    .pagina-confirmacion .check-confirmacion {
+        width: 90px;
+        height: 90px;
+        font-size: 50px;
+    }
+}
 }
