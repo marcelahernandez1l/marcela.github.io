@@ -922,4 +922,128 @@ legend {
         text-align: center;
         align-items: center;
     }
+    #pantalla-formulario,
+#pantalla-confirmacion {
+    display: none;
+}
+
+.formulario-reserva {
+    display: block;
+}
+
+.confirmacion-reserva {
+    display: none;
+}
+
+#pantalla-confirmacion:checked ~ .formulario-reserva {
+    display: none;
+}
+
+#pantalla-confirmacion:checked ~ .confirmacion-reserva {
+    display: flex;
+}
+
+.boton-confirmacion {
+    margin-top: 25px;
+}
+
+.confirmacion-reserva {
+    min-height: 550px;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.tarjeta-confirmacion {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fffaf2;
+    padding: 55px 40px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.20);
+}
+
+.check-confirmacion {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background-color: #d9902b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.tarjeta-confirmacion h2 {
+    color: #6b3828;
+    font-size: 42px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.texto-confirmacion {
+    color: #555;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.informacion-confirmacion {
+    background-color: #f4e4ce;
+    padding: 18px 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    color: #6b3828;
+}
+
+.informacion-confirmacion p {
+    margin: 7px 0;
+}
+
+.boton-volver {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.tarjeta-confirmacion {
+    animation: aparecer-confirmacion 0.5s ease;
+}
+
+@keyframes aparecer-confirmacion {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .tarjeta-confirmacion {
+        padding: 40px 20px;
+    }
+
+    .tarjeta-confirmacion h2 {
+        font-size: 32px;
+    }
+
+    .texto-confirmacion {
+        font-size: 17px;
+    }
+
+    .check-confirmacion {
+        width: 95px;
+        height: 95px;
+        font-size: 55px;
+    }
 }
