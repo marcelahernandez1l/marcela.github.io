@@ -48,7 +48,10 @@
 
 <div class="contenedor">
 
-<section class="formulario-contenedor">
+<input type="radio" name="pantalla-reserva" id="pantalla-formulario" checked>
+<input type="radio" name="pantalla-reserva" id="pantalla-confirmacion">
+
+<section class="formulario-contenedor formulario-reserva">
 
     <div class="formulario-intro">
 
@@ -180,15 +183,60 @@
 
             </div>
 
-            <button
-                type="submit"
+            <label
+                for="pantalla-confirmacion"
                 class="boton boton-principal boton-formulario">
                 Confirmar reservación
-            </button>
+            </label>
 
         </fieldset>
 
     </form>
+
+</section>
+
+<section class="confirmacion-reserva">
+
+    <div class="tarjeta-confirmacion">
+
+        <div class="check-confirmacion">
+            ✓
+        </div>
+
+        <p class="etiqueta">
+            EL TRIÁNGULO DEL SABOR
+        </p>
+
+        <h2>
+            ¡Reserva confirmada!
+        </h2>
+
+        <p class="texto-confirmacion">
+            Tu reservación está confirmada.
+            <br>
+            ¡Te esperamos!
+        </p>
+
+        <div class="informacion-confirmacion">
+
+            <p>
+                Gracias por elegir
+                <strong>El Triángulo del Sabor</strong>.
+            </p>
+
+            <p>
+                Hemos recibido correctamente tu solicitud de reservación.
+            </p>
+
+        </div>
+
+        <a
+            href="index.html"
+            class="boton boton-principal boton-volver">
+            Volver al inicio
+        </a>
+
+    </div>
 
 </section>
 
